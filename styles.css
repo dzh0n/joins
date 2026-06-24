@@ -47,6 +47,36 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
+.hero__instagram {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b 50%, #6228d7);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 6px 24px rgba(238, 42, 123, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero__instagram:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 32px rgba(238, 42, 123, 0.6);
+}
+
+.hero__instagram-icon {
+  flex-shrink: 0;
+}
+
 .hero__header {
   position: absolute;
   top: 22px;
@@ -620,8 +650,29 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0;
   }
 
+  .hero__instagram {
+    top: 10px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 12px;
+    gap: 6px;
+    font-size: 0.72rem;
+    border-width: 1.5px;
+    white-space: nowrap;
+  }
+
+  .hero__instagram-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .hero__instagram:hover {
+    transform: translateX(-50%) translateY(-2px) scale(1.03);
+  }
+
   .hero__header {
-    top: 16px;
+    top: 78px;
     left: 50%;
     transform: translateX(-50%);
     width: calc(100% - 32px);
